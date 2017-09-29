@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="icon-fonts/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.css">
+</head>
+<body ng-app='app'>
+
+<div class="wrap" ng-controller="wrap">
+	<header>
+		<span><i class="iconfont icon-shouqi-01"></i></span>
+		<span ui-sref='index' ui-sref-active='click'><i class="iconfont icon-yinlezanting"></i></span>
+		<span ui-sref='index2' ui-sref-active='click'><i class="iconfont icon-tengxunweibo"></i></span>
+		<span ui-sref='index3' ui-sref-active='click'><i class="iconfont icon-icongerenzhongxin-01"></i></span>
+		<span><i class="iconfont icon-fangdajing"></i></span>
+	</header>
+	<section>
+		<ui-view></ui-view>
+	</section>
+	<footer>
+		<div class="foot">
+			<dl>
+				<dt>
+					<img src="images/1_03.jpg" alt="">
+				</dt>
+				<dd>
+					<p>{{data.name}}</p>
+					<p>{{data.singer}}</p>
+				</dd>
+			</dl>
+			<div class="icon">
+				<span>
+					<i class="iconfont" id="switchs" ng-click="audio()">&#xf0088;</i>
+					 <audio ng-src="{{data.url}}" ng-model='msg'></audio>
+				</span>
+				<span style="padding-left:0.3rem"><i class="iconfont icon-suopingxiayiqu" id="next-music" ng-click="next()"></i></span>
+			</div>
+		</div>
+	</footer>
+</div>
+	
+</body>
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/swiper.js"></script>
+
+</html>

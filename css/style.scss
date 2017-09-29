@@ -1,0 +1,549 @@
+*{padding: 0;margin: 0;list-style: none;box-sizing: border-box;}
+html,body{
+	width:100%;
+	height: 100%;
+}
+.wrap{
+	width:100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	width: 100%;
+	background: #cd3d3d;
+	line-height: 1rem;
+	flex-shrink: 0;
+}
+
+header .iconfont{
+	color:#eb8684;
+	font-size: 0.45rem;
+}
+header span:nth-child(1){
+	padding-left:0.35rem;
+	.iconfont{
+		color:#fff;
+	}
+}
+header span:nth-child(2){
+	padding-left:1.2rem;
+}
+header span:nth-child(3){
+	padding-left:0.54rem;
+}
+header span:nth-child(4){
+	padding-left:0.54rem;
+}
+header span:nth-child(5){
+	padding-left:1.2rem;
+	.iconfont{
+		color:#fff;
+	}
+}
+.click i{
+	color:#fff;
+}
+section{
+	width:100%;
+	height: 100%;
+	overflow-y:auto;
+	flex-shrink: 1;
+}
+
+
+footer{
+	width:100%;
+	height: 1.17rem;
+	flex-shrink: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.foot{
+	width:100%;
+	height: 100%;
+	display: flex;
+	background: pink;
+	position: relative;
+}
+.foot dl{
+	display: flex;
+}
+.foot dl dt{
+	margin:0.18rem 0.15rem;
+	width:0.85rem;
+	height: 0.85rem;
+	img{
+		width:100%;
+		height: 100%;
+		display: block;
+	}
+}
+.foot dl dd{
+	line-height:0.4rem;
+	padding-top:0.2rem;
+}
+.foot dl dd p:nth-child(1){
+	font-size:0.35rem;
+	color:#747577;
+}
+.foot dl dd p:nth-child(2){
+	font-size:0.25rem;
+	color:#b7b9b8;
+}
+.icon{
+	position: absolute;
+	right:0.1rem;
+	top:0;
+	display: flex;
+	height:100%;
+	line-height: 0.7rem
+	
+}
+.icon .iconfont{
+	font-size:0.47rem;
+	color:#cd3d3d;
+}
+
+
+
+/*个性推荐页*/
+.recom-head{
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	height: 0.84rem;
+	align-items: center;
+	font-size: 0.3rem;
+	position: fixed;
+	top:1.17rem;
+	left:0;
+	background: #fff;
+	z-index: 22
+}
+.recom-click{
+	color:#cd3738;
+	position: relative;
+}
+.recom-click:after{
+	content:'';
+	width:100%;
+	height: 0;
+	border:0.02rem solid #cd3738;
+	position: absolute;
+	left:-0.2rem;
+	bottom:-0.20rem;
+}
+.recom-section{
+	margin-top:0.9rem;
+}
+
+.swiper-slide img{
+	width:100%;
+	height: 100%;
+}
+.recom-icon{
+	width:100%;
+	padding:0.38rem 0;
+	display: flex;
+	justify-content: space-around;
+}
+.recom-icon li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.recom-icon li p:nth-child(1){
+		width:1.1rem;
+		height: 1.1rem;
+		border-radius:50%;
+		line-height:0.55rem;
+		text-align: center;
+		border:0.01rem solid #cd3d3d;
+		i{
+			font-size:0.5rem;
+			color:#cd3d3d;
+		}
+}
+.recom-icon li p:nth-child(2){
+		font-size: 0.26rem;
+		padding-top:0.1rem;
+}
+.recom-tit{
+	width:100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size:0.32rem;
+	padding-left:0.21rem;
+	border-top:0.01rem solid #dad6d6;
+}
+.recom-tit span i{
+	color:#cd3d3d;
+	font-size:0.4rem;
+}
+.recom-tit span:nth-child(2){
+	color:#5f5f5f;
+	font-size:0.3rem;
+	margin-left:4.57rem;
+}
+.recom-cont{
+	width:100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+.recom-cont dl{
+	width:2.2rem;
+	margin-left:0.2rem;
+	margin-top:0.15rem;
+}
+.recom-cont dl dt{
+	width:100%;
+	height: auto;
+}
+.recom-cont dl dt img{
+	width:100%;
+	height:100%;
+}
+.recom-cont dl dd{
+	width:100%;
+	font-size:0.27rem;
+	color:#4c4e4d;
+}
+
+/*歌单*/
+.songList-tit{
+	width:100%;
+	height: 1.08rem;
+	background: #f0f4f3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size:0.35rem;
+}
+.songList-tit span:nth-child(1){
+	margin-left:0.1rem;
+	padding-left:0.1rem;
+	border-left:0.1rem solid #d04e4e;
+}
+.songList-tit span:nth-child(2){
+	padding:0.1rem;
+	border:0.01rem solid #787a79;
+	font-size:0.25rem;
+	color:#787a79;
+	margin-right:0.1rem;
+}
+
+.songList-item{
+	width:100%;
+	height: 1.41rem;
+	display: flex;
+	position: relative;
+
+}
+.songList-item div:nth-child(1){
+	width:1.41rem;
+}
+.songList-item div:nth-child(1) img{
+	width: 100%;
+	height:100%;
+}
+.songList-item div:nth-child(2){
+	font-size: 0.35rem;
+	font-weight: bold;
+	padding:0 0 0 0.21rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.songList-item div:nth-child(2) p:nth-child(2){
+	font-size:0.26rem;
+	color:#9c9c9c;
+}
+.songList-item div:nth-child(3){
+	position: absolute;
+	right:0.2rem;
+	top:-0.2rem;
+	i{
+		font-size:0.35rem;
+		color:#9c9c9c;
+	}
+}
+.songList-cont{
+	width:100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+.songList-cont dl{
+	width:3.45rem;
+	height: 3.45rem;
+	margin-left:.22rem;
+	margin-top:0.15rem;
+}
+.songList-cont dl dt,.songList-cont dl dd{
+	width:100%;
+}
+.songList-cont dl dt img{
+	width:100%;
+	height: 100%;
+}
+.songList-cont dl dd{
+	font-size:0.25rem;
+	color: #595b5a;
+}
+
+/*主播电台*/
+.swiper-slide ul{
+	width:100%;
+	display: flex;
+	flex-wrap:wrap;
+	background: #f0f4f3;
+	padding-bottom: 0.8rem;
+}
+.swiper-slide ul li{
+	width:25%;
+}
+.swiper-slide ul li p:nth-child(1){
+	width:100%;
+	text-align:center;
+	i{
+		font-size:0.5rem;
+		color:#cd3d3d;
+	}
+}
+.swiper-slide ul li p:nth-child(2){
+	font-size:0.25rem;
+	color:#898b8a;
+	width:100%;
+	text-align:center;
+}
+.anchor-container .swiper-pagination{
+	position: absolute;
+	bottom:0;
+}
+.anchor-box{
+	width:7.25rem;
+	height: 1.7rem;
+	margin:0 auto;
+	border:.01rem solid #8e8e8e;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.anchor-box div:nth-child(1){
+	margin-left:0.41rem;
+	line-height: 0.4rem;
+}
+.anchor-box div:nth-child(1) p:nth-child(1){
+	font-size:0.3rem;
+	color:#454545;
+}
+.anchor-box div:nth-child(1) p:nth-child(2){
+	font-size:0.25rem;
+	color:#606362;
+	span{
+		color:#cf6056;
+	}
+}
+
+.anchor-box div:nth-child(2){
+	width:2.4rem;
+	height: 100%;
+	img{
+		width:100%;
+		height: 100%;
+	}
+}
+.anchor-recom{
+	width:7.11rem;
+	border-bottom:0.01rem solid #ccc;
+	/*margin:0 auto;*/
+	margin-left:0.3rem;
+	height: 0.8rem;
+	margin-top:0.4rem;
+}
+.anchor-recom >p{
+	margin-bottom:0.1rem;
+	font-size:0.34rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	span{
+		padding-left:0.12rem;
+		border-left:0.1rem solid #d14f4f;
+	}
+}
+.anchor-recom dl{
+	display: flex;
+	margin-top:0.2rem;
+}
+.anchor-recom dl dt{
+	width:1.27rem;
+	height: 1.27rem;
+	img{
+		width:100%;
+		height: 100%;
+	}
+}
+.anchor-recom dl dd{
+	width:7rem;
+	margin-left:0.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-bottom:0.01rem solid #ccc;
+	p:nth-child(1){
+		font-size:0.35rem;
+		color:#262827;
+	}
+	p:nth-child(2){
+		font-size:0.23rem;
+		padding-top:0.1rem;
+		color:858988;
+	}
+}
+
+/*排行榜*/
+.charts-tit{
+	margin-left:0.2rem;
+	height: 0.7rem;
+	line-height: .4rem;
+	span{
+		border-left:0.1rem solid #d14f4f;
+		font-size:0.33rem;
+		color:#535353;
+		padding-left:0.12rem;
+	}
+}
+.charts dl{
+	display: flex;
+	width:7.2rem;
+	margin-left:0.2rem;
+	margin-top:0.3rem;
+}
+.charts dl dt{
+	width:1.88rem;
+	height: 1.88rem;
+	img{
+		width:100%;
+		height: 100%;
+	}
+}
+.charts dl dd{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left:0.2rem;
+	width:5.16rem;
+	border-bottom: 0.01rem solid #ccc;
+	line-height: 0.35rem;
+
+}
+.charts dl dd p{
+	font-size:0.29rem;
+	color:#737574;
+	padding-bottom:0.4rem;
+}
+
+/*音乐*/
+.music{
+	width:6.44rem;
+	margin-left:1rem;
+}
+.music li{
+	width:100%;
+	font-size:0.33rem;
+	height: 1.12rem;
+	line-height: 1.12rem;
+	position: relative;
+	border-bottom:0.01rem solid #ccc;
+}
+.music li i{
+	position: absolute;
+	left:-0.61rem;
+	top:0.05rem;
+	font-size:0.45rem;
+	color: #cd3d3d;
+}
+.music li b{
+	font-weight:normal;
+	color: #949897;
+	font-size:0.3rem;
+}
+
+.music-menu >p{
+	font-size:0.3rem;
+	height: 0.62rem;
+	background: #e4e8e7;
+	color:#696b6a;
+	line-height: 0.62rem;
+	display: flex;
+	justify-content: space-between;
+}
+.music-menu >p span:nth-child(1){
+	i{
+		padding:0 0.12rem 0 0.19rem;
+		font-size:0.3rem;
+	}
+}
+.music-menu >p span:nth-child(2){
+	padding-right: 0.4rem;
+	i{
+		font-size:0.35rem;
+	}
+}
+.menu-item{
+	width: 100%;
+	height: 1.35rem;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.menu-item div:nth-child(1){
+	width:1.06rem;
+	height: 1.06rem;
+	margin:0 0.21rem;
+	
+	img{
+		width:100%;
+		height: 100%;
+	}
+}
+.menu-item div:nth-child(2){
+	width:6rem;
+	padding-top:0.1rem;
+	padding-bottom:0.2rem;
+	border-bottom:0.01rem solid #ccc;
+}
+.menu-item div:nth-child(2) p:nth-child(1){
+	font-size:0.33rem;
+	padding:0.2rem 0;
+
+}
+.menu-item div:nth-child(2) p:nth-child(2){
+	font-size:0.25rem;
+	i{
+		color:#50b7e7;
+	}
+}
+.menu-item div:nth-child(3){
+	position: absolute;
+	right:0.41rem;
+	top:-0.2rem;
+}
+
+/*我的音乐*/
+.recom-head{
+	width:100%;
+	display: flex;
+}
+.recom-head p{
+	width:33.33%;
+	height: 98%;
+	line-height:0.8rem;
+	text-align: center;
+}
+.per-click{
+	color:#cd3d3d;
+
+	border-bottom:0.03rem solid #cd3d3d;
+}
+
